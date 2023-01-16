@@ -1,0 +1,13 @@
+footer {
+    background: black;
+}
+
+.contenedor-redes-logo a svg {
+    font-size: 30px;
+    transition: .5s all;
+}
+
+.contenedor-redes-logo a svg:hover {
+    color: gray;
+    
+}
