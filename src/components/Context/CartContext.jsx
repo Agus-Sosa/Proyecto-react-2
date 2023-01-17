@@ -5,7 +5,7 @@ export const CartConext = createContext();
 const CartConextProvider = ({children}) => {
     const [listaCarrito, SetListaCarrito] = useState([]);
 
-    const agregarACarrito = (item, qty) => {
+    const agregarACarrito = (item, cantidad) => {
         let noExiste = listaCarrito.find(prod => prod.id === item.id)
         if(noExiste === undefined) {
             SetListaCarrito ([
@@ -14,11 +14,11 @@ const CartConextProvider = ({children}) => {
                     nombre: item.nombre,
                     imagen: item.imagen,
                     precio: item.precio,
-                    qty: qty
+                    cantidad: cantidad 
                 }
             ])
         } else {
-            noExiste.qty += qty 
+            noExiste.cantidad += cantidad 
             SetListaCarrito([...listaCarrito])
         }
     }

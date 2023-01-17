@@ -1,21 +1,12 @@
 import React from 'react'
+import { Link, Route } from 'react-router-dom'
 import './Styles/portada.css'
 
 const Portada = () => {
     return (
         <>
-        
-        <section className='contenedor-portada'>
-            <div className='contenedor-info-portada'>
 
-            </div>
-            <div className='contenedor-img'>
-
-            </div>
-        </section>
-        <h2>Recomendado para ti</h2>
-
-        
+        <h2>Recomendados para ti</h2>
         </>
 
     )

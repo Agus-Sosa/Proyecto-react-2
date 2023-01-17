@@ -18,7 +18,7 @@ const Item = ({id, nombre, imagen ,categoria, precio, icono}) => {
             </div>
             <div className='contenedor-info-card'>
                 <p>{nombre}</p>
-                <span>{precio}</span>
+                <span>US${precio}</span>
             
             </div>
         </div>

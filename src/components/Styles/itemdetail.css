@@ -1,0 +1,52 @@
+.contenedor-item {
+    position: relative;
+    backdrop-filter: blur(20px);
+}
+
+
+
+.contenedor-info-item {
+    position: absolute;
+    top: 9%;
+    border-radius: 10px;
+    left: 4%;
+    padding: 19px;
+}
+
+
+.contenedor-info-item h2 {
+    font-size: 60px;
+}
+
+.contenedor-info-item p {
+    font-size: 20px;
+}
+
+
+.contenedor-info-item span {
+    font-size: 40px;
+}
+
+.contenedor-blur {
+    filter: opacity(0.5);
+}
+
+.conetenedor-img-item {
+    overflow: hidden;
+    height: 605px;
+}
+
+.contenedor-boton-comprar {
+    display: flex;
+    justify-content: flex-start;        
+}
+
+.contenedor-boton-comprar button {
+    background-color: white;
+    color: black;
+    padding: 8px 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    font-weight: 700;
+}

@@ -41,7 +41,13 @@
 
 .contenedor-info-card {
     padding: 20px;
+    padding-top: 0px;
 }
+
+.contenedor-info-card span {
+    font-size: 20px;
+}
+
 
 .categoria-item {
     position: absolute;

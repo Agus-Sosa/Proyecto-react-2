@@ -32,9 +32,13 @@ const ItemListContainer = () => {
 
     return (
         <>
-        <Portada/>
+        <div className='contenedor-portada'>
+        <Portada item={datos}/>
+        </div>
+        <div data-aos="zoom-in">
         <div className='contenedor-items'>
         <ItemList item={datos}/>
+        </div>
         </div>
         </>
     )
