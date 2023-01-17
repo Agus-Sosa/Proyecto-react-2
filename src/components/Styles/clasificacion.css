@@ -1,0 +1,15 @@
+.contenedor-clasificacion {
+    display: flex;
+    margin: 10px 0px;
+    
+
+}
+
+.contenedor-info-clasificacion {
+    width: 50%;
+    margin: 0px 10px;
+}
+
+.contenedor-info-clasificacion p {
+    font-size: 15px;
+}

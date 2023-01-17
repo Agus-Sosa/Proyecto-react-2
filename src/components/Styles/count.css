@@ -1,7 +1,19 @@
 .contenedor-contadores {
-
+    margin: 20px 0px;
 }
 
 .contenedor-contadores p {
     font-size: 15px;
+}
+
+.contenedor-contadores button {
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+.contenedor-contadores span {
+    font-size: 30px;
+}
+
+.contenedor-contador-botones {
 }
