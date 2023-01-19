@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom'
 import Clasificacion from './Clasificacion'
 import {BiChevronRight} from 'react-icons/bi'
 import Loader from './Loader'
+import {HiOutlineExclamationCircle} from 'react-icons/hi'
+import {GiConsoleController} from 'react-icons/gi'
+import {FaUser, FaCartPlus} from 'react-icons/fa'
 
 const ItemDetail = ({item}) => {
     const [contadorItem, setContadorItem] = useState(0)
@@ -38,8 +41,20 @@ const ItemDetail = ({item}) => {
                     <div className='categoria-genero'>
                     <span>{item.categoria}</span> <BsCircleFill/> <span>{item.genero}</span>
                     </div>
+                    <div className='contenedor-jugabilidad'>
+                        <p><FaUser/>{item.jugador} Jugador/es</p>
+                        <p><GiConsoleController/>{item.consolaDisponible} Disponible/es</p>
+                        <p><FaCartPlus/>{item.complementos}</p>
+                    </div>
+                </div>
+                <div className='contenedor-precio'>
+                    <div className='contenedor-precio-producto'>
+                <h3>US${item.precio}</h3> <HiOutlineExclamationCircle/> <span>No es el precio final</span>
+                    </div>
+                <ItemCount stock={item.stock} inicial={contadorItem} onAdd={onAdd}/>
                 </div>
                 </div>
+
                 <Clasificacion item={item}/>
                 </section>
             </section>

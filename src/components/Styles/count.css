@@ -1,5 +1,7 @@
 .contenedor-contadores {
     margin: 20px 0px;
+    display: grid;
+    justify-items: center;
 }
 
 .contenedor-contadores p {
@@ -16,4 +18,12 @@
 }
 
 .contenedor-contador-botones {
+}
+
+.contenedor-boton-comprar button{
+    width: 100%;
+    padding: 10px;
+    font-weight: 800;
+    background: white;
+    color: black;
 }

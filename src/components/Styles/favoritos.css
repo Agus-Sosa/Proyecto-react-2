@@ -1,0 +1,14 @@
+.contenedor-boton-favoritos {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor-boton-favoritos button {
+    background: none;
+    border: solid 1px white;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0px;
+}

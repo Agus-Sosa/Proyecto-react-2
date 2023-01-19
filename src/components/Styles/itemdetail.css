@@ -34,7 +34,12 @@
 }
 
 .contenedor-imagen-producto {
-    width: 300px;
+    width: 400px;
+}
+
+.contenedor-imagen-producto img {
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px; 
 }
 
 .contenedor-producto {
@@ -49,6 +54,14 @@
 
 .contenedor-informacion {
     margin: 0px 30px;
+    min-width: 40pc;
+
+}
+
+.contenedor-informacion h2 {
+    margin: 0px 6px;
+    font-size: 40px;
+    justify-content: flex-start;
 }
 
 .contenedor-informacion h3 {
@@ -78,4 +91,48 @@
     background: black;
     height: 100%;
 
+}
+
+.contenedor-precio {
+padding: 30px;
+min-width: 430px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.contenedor-precio h3 {
+    font-size: 30px;
+display: inline;
+}
+
+.contenedor-precio-producto {
+    display: flex;
+    align-items: center;
+
+}
+
+.contenedor-precio-producto svg {
+    margin: 0px 10px;
+    font-size: 15px;
+}
+
+
+.contenedor-precio-producto span {
+    font-size: 12px;
+}
+
+.contenedor-jugabilidad {
+    margin: 0pc 7px;
+}
+
+.contenedor-jugabilidad p{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.contenedor-jugabilidad p svg {
+    margin: 0px 10px;
+    font-size: 20px;
 }
