@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState} from 'react'
+
 import {GoDash, GoPlus} from 'react-icons/go'
 import BotonFavoritos from './BotonFavoritos'
 import './Styles/count.css'
@@ -18,7 +19,7 @@ const ItemCount = ({inicial = 1, stock = 0, onAdd}) => {
     }
 
     const disminuirCantidad = () => {
-        contador > inicial+1
+        contador > inicial + 1
         ? setContador(contador - 1)
         : alert('No se puede menos de 1')
     } 
@@ -37,8 +38,8 @@ const ItemCount = ({inicial = 1, stock = 0, onAdd}) => {
         <div className='contenedor-boton-comprar'>
             {
                 stock && contador
-                ? <button onClick={() => onAdd=(contador)}>Agregar al carrito</button>
-                : <button className='disbabled'>Sin stock</button>
+                ? <button onClick={() => onAdd(contador)}>Agregar al carrito</button>
+                : <button className='disbabled'>Agregar al carrito</button>
             }
         </div>
         <BotonFavoritos/>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, Route } from 'react-router-dom'
 import './Styles/portada.css'
 
-const Portada = () => {
+const Portada = ({item}) => {
     return (
         <>
 

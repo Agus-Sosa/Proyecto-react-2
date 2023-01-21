@@ -2,23 +2,36 @@ import React, { useContext, useState } from 'react'
 import { CartConext } from './Context/CartContext'
 import './Styles/itemdetail.css'
 import ItemCount from './ItemCount'
-import {BsCircleFill} from 'react-icons/bs'
+import {BsCircleFill, BsCartCheck} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import Clasificacion from './Clasificacion'
+import 'react-toastify/dist/ReactToastify.css';
 import {BiChevronRight} from 'react-icons/bi'
 import Loader from './Loader'
-import {HiOutlineExclamationCircle} from 'react-icons/hi'
+import {HiOutlineExclamationCircle, HiOutlineArrowNarrowRight} from 'react-icons/hi'
 import {GiConsoleController} from 'react-icons/gi'
 import {FaUser, FaCartPlus} from 'react-icons/fa'
+import Capturas from './Capturas'
+import { ToastContainer, toast } from 'react-toastify'
+
 
 const ItemDetail = ({item}) => {
     const [contadorItem, setContadorItem] = useState(0)
-    const {agregarAlCarrito} = useContext(CartConext)
+    const {agregarACarrito} = useContext(CartConext)
 
-    const onAdd = (cantidad) =>{
-
-        setContadorItem(cantidad)
-        agregarAlCarrito(item, cantidad)
+    const onAdd = (qty) =>{
+        toast('Se Agrego al carrito! 🛒', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
+        setContadorItem(qty)
+        agregarACarrito(item, qty)
     }
     return (
         <>
@@ -51,16 +64,32 @@ const ItemDetail = ({item}) => {
                     <div className='contenedor-precio-producto'>
                 <h3>US${item.precio}</h3> <HiOutlineExclamationCircle/> <span>No es el precio final</span>
                     </div>
-                <ItemCount stock={item.stock} inicial={contadorItem} onAdd={onAdd}/>
+                    {
+                        contadorItem === 0
+                        ?<ItemCount stock={item.stock} inicial={contadorItem} onAdd={onAdd}/>
+                        :<>
+                        <Link to={'/carrito'}>
+                            <div className='ir-a-carrito'>
+                                <button>Ir a carrito <HiOutlineArrowNarrowRight/></button>
+                            </div>
+                            </Link>
+                        </>
+                    }
                 </div>
                 </div>
 
                 <Clasificacion item={item}/>
                 </section>
+                <section className='contenedor-detalle-juego'>
+                <h2>Detalles</h2>
+                <Capturas item={item}/>
+                </section>
             </section>
 
         :   <div className='contenedor-loader'><Loader item={item}/></div>
         }
+
+        <ToastContainer/>
         </>
     )
 }
