@@ -13,6 +13,7 @@ import {GiConsoleController} from 'react-icons/gi'
 import {FaUser, FaCartPlus} from 'react-icons/fa'
 import Capturas from './Capturas'
 import { ToastContainer, toast } from 'react-toastify'
+import DescripcionItem from './DescripcionItem'
 
 
 const ItemDetail = ({item}) => {
@@ -83,6 +84,7 @@ const ItemDetail = ({item}) => {
                 <section className='contenedor-detalle-juego'>
                 <h2>Detalles</h2>
                 <Capturas item={item}/>
+                <DescripcionItem item={item}/>
                 </section>
             </section>
 
