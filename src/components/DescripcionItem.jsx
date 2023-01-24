@@ -10,10 +10,27 @@ const DescripcionItem = ({item}) => {
             </div>
         <section className='contenedor-descripcion'> 
         <div className='contenedor-descripcion-prod'>
-        <h3>Descripcion</h3>    
-        <p>{item.descripcion}</p>
+        <h3>Descripcion</h3>
+        <div className='descripcion'>
+            <p>{item.descripcion}</p>
+                <div className='contenedor-desarrollador'>
+                    <div className='desarrolador'>
+                    <p>Desarrollado por</p>
+                    <span>{item.desarrollador}</span>
+                    </div>
+                    <div className='publicacion'>
+                    <p>Publicado por</p>
+                    <span>{item.publicacion}</span>
+                    </div>
+                    <div className='lanzamiento'>
+                    <p>Fecha de lanzamiento</p>
+                    <span>{item.lanzamiento}</span>
+                </div>
+                </div>
+            </div>    
         </div>
         <div className='contenedor-imagen-descripcion'>
+            <h3>Trailer</h3>
             <ReactPlayer 
             url={item.trailer}
             controls

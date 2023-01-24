@@ -77,3 +77,13 @@
 .contenedor-valoracion svg {
     font-size: 15px;
 }
+
+.contenedor-desarrollador {
+    margin: 20px 0px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-desarrollador p {
+    font-weight: 900;
+}
