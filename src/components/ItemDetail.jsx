@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { CartConext } from './Context/CartContext'
 import './Styles/itemdetail.css'
 import ItemCount from './ItemCount'
-import {BsCircleFill, BsCartCheck} from 'react-icons/bs'
+import {BsCircleFill, BsFillStarFill, BsStarFill} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import Clasificacion from './Clasificacion'
 import 'react-toastify/dist/ReactToastify.css';
@@ -62,6 +62,11 @@ const ItemDetail = ({item}) => {
                     </div>
                 </div>
                 <div className='contenedor-precio'>
+                    <div className='contenedor-valoracion'>
+                    <p><BsStarFill/></p>
+                    <p>{item.valoracion}</p>
+                    <p>Valoracion</p>
+                    </div>
                     <div className='contenedor-precio-producto'>
                 <h3>US${item.precio}</h3> <HiOutlineExclamationCircle/> <span>No es el precio final</span>
                     </div>

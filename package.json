@@ -19,7 +19,7 @@
     "react-player": "^2.11.0",
     "react-router-dom": "^6.6.1",
     "react-toastify": "^9.1.1",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.6"
   },
   "devDependencies": {
     "@svgr/core": "^6.5.1",

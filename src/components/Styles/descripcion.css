@@ -10,6 +10,7 @@
 .portada-descripcion img {
     filter: blur(5px
     );
+    width: 100%;
 }
 
 .portada-descripcion {
@@ -54,5 +55,25 @@
 
 .contenedor-imagen-descripcion iframe {
     border-radius: 20px;
-    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    /* box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px; */
+}
+
+.contenedor-valoracion{
+    display: flex;  
+    align-items: baseline;
+}
+
+.contenedor-valoracion p {
+    display: flex;
+    margin: 0px 5px;
+    font-size: 20px;
+}
+
+.contenedor-valoracion p:nth-child(3) {
+    font-size: 15px;
+}
+
+
+.contenedor-valoracion svg {
+    font-size: 15px;
 }

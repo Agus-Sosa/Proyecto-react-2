@@ -14,7 +14,13 @@ const DescripcionItem = ({item}) => {
         <p>{item.descripcion}</p>
         </div>
         <div className='contenedor-imagen-descripcion'>
-            <ReactPlayer url={item.capturas[0]}/>
+            <ReactPlayer 
+            url={item.trailer}
+            controls
+            playing
+            muted
+            loop
+            />
         </div>
         </section>
         </div>
