@@ -2,11 +2,12 @@ import React from 'react'
 import './Styles/favoritos.css'
 
 
-const BotonFavoritos = () => {
+const BotonFavoritos = ({onAddFav}) => {
+
     return (
         <>
         <div className='contenedor-boton-favoritos'>
-            <button>Agregar a favoritos</button>
+            <button onClick={() => onAddFav()} >Agregar a favoritos</button>
         </div>
         </>
     )

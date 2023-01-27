@@ -14,12 +14,16 @@ import {FaUser, FaCartPlus} from 'react-icons/fa'
 import Capturas from './Capturas'
 import { ToastContainer, toast } from 'react-toastify'
 import DescripcionItem from './DescripcionItem'
+import BotonFavoritos from './BotonFavoritos'
 
 
 const ItemDetail = ({item}) => {
     const [contadorItem, setContadorItem] = useState(0)
     const {agregarACarrito} = useContext(CartConext)
-
+    const {agregarAFavoritos} = useContext(CartConext)
+    const onAddFav = () => {
+        agregarAFavoritos(item)
+    }
     const onAdd = (qty) =>{
         toast('Se Agrego al carrito! 🛒', {
             position: "top-right",
@@ -72,7 +76,11 @@ const ItemDetail = ({item}) => {
                     </div>
                     {
                         contadorItem === 0
-                        ?<ItemCount stock={item.stock} inicial={contadorItem} onAdd={onAdd}/>
+                        
+                        ?<>
+                        <ItemCount stock={item.stock} inicial={contadorItem} onAdd={onAdd}/> 
+                        <BotonFavoritos onAddFav={onAddFav}/>  
+                        </>
                         :<>
                         <Link to={'/carrito'}>
                             <div className='ir-a-carrito'>

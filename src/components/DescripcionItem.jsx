@@ -34,7 +34,6 @@ const DescripcionItem = ({item}) => {
             <ReactPlayer 
             url={item.trailer}
             controls
-            playing
             muted
             loop
             />

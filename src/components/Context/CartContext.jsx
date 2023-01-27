@@ -25,6 +25,8 @@ const CartConextProvider = ({children}) => {
         }
     }
 
+
+
     const eliminarProducto = (id) =>{
         let eliminar = listaCarrito.filter(prod => prod.id !== id)
         SetListaCarrito(eliminar)
@@ -53,7 +55,7 @@ const CartConextProvider = ({children}) => {
 
     return (
         <>
-        <CartConext.Provider value={{listaCarrito ,agregarACarrito, eliminarProducto, eliminarCarrito, calcularProductoCarrito, precioTotal}}>
+        <CartConext.Provider value={{listaCarrito ,agregarACarrito, eliminarProducto, eliminarCarrito, calcularSubTotal, calcularProductoCarrito, precioTotal, calcularImpuestos}}>
             {children}
         </CartConext.Provider>
         </>

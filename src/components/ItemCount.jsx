@@ -42,7 +42,7 @@ const ItemCount = ({inicial = 1, stock = 0, onAdd}) => {
                 : <button className='disbabled'>Agregar al carrito</button>
             }
         </div>
-        <BotonFavoritos/>
+        {/* <BotonFavoritos/> */}
         </div>
         </>
         )

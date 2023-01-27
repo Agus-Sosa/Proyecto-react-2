@@ -31,7 +31,6 @@ const Capturas = ({item}) => {
             <SwiperSlide><img src={item.capturas[2]} alt="" /></SwiperSlide>
             <SwiperSlide><img src={item.capturas[3]} alt="" /></SwiperSlide>
             <SwiperSlide><img src={item.capturas[4]} alt="" /></SwiperSlide>
-            {/* <SwiperSlide><img src={item.capturas[5]} alt="" /></SwiperSlide> */}
         </Swiper>
             </div>
         </section>
