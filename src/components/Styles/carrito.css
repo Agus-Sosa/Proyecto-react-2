@@ -14,17 +14,23 @@
 
 .contenedor-prod-carrito h1 {
     font-size: 22px;
+    border-bottom: solid #5d5d5d;
+    display: inline-flex;
+    padding-bottom: 5px;
 }
+
 
 .contenedor-prod-carrito img {
     width: 150px;
-    border-radius: 5px;
+    padding: 6px;
+    border-radius: 10px;
 }
 
 .contenedor-prod-carrito ul {
     display: flex;
     border-radius: 5px;
     min-width: 509px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     background: #2e2e2e;
     margin: 15px 0px;
 }
@@ -102,6 +108,7 @@
     font-size: 20px; 
     color: gray;
     transition: .5s all;
+    box-shadow: rgb(23 23 38 / 44%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px
 }
 
 .contenedor-precio-prod button:hover {
@@ -128,7 +135,7 @@
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
-
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .subtotal,
@@ -163,6 +170,7 @@
     color: black;
     padding: 10px;
     width: 100%;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
     transition: .5s all;
     margin: auto;
 }
@@ -171,4 +179,78 @@
 .boton-comprar:focus {
     box-shadow: 0 0.5em 0.5em -0.4em  white;
     transform: translateY(-0.25em);
+}
+
+.contenedor-borrar-carrito {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor-borrar-carrito button {
+    padding: 5px;
+    background-color: none;
+    border: solid 1px white;
+}
+
+.contenedor-borrar-carrito button {
+
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #2e2e2e;
+}
+
+.contenedor-borrar-carrito button, button span {
+    transition: 200ms;
+}
+
+.contenedor-borrar-carrito button .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+.contenedor-borrar-carrito button .icon {
+    position: absolute;
+    border-left: 1px solid  gray;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenedor-borrar-carrito button svg {
+    width: 15px;
+    fill: #eee;    
+}
+
+.contenedor-borrar-carrito button:hover {
+    background-color: #2e2e2e;
+}
+
+.contenedor-borrar-carrito button:hover .text {
+    color: transparent;
+}
+
+.contenedor-borrar-carrito button:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.contenedor-borrar-carrito button:focus {
+    outline: none;
+}
+
+.contenedor-borrar-carrito button:active .icon svg {
+    transform: scale(0.8);
 }
