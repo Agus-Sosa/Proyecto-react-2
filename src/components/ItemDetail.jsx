@@ -95,7 +95,9 @@ const ItemDetail = ({item}) => {
                 <Clasificacion item={item}/>
                 </section>
                 <section className='contenedor-detalle-juego'>
-                <h2>Detalles</h2>
+                    <div className="titulo-detalle">
+                        <h2>Detalles</h2>
+                    </div>
                 <Capturas item={item}/>
                 <DescripcionItem item={item}/>
                 </section>

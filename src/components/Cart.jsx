@@ -86,9 +86,8 @@ const Cart = () => {
                             </div>
                             <div className='informacion' key={item.id}>
                             <p>{item.nombre}</p>
-                            <span>{item.publicacion}</span>
+                            
                             <div className="producto-digital">
-
                             </div>
                             </div>
                             <div className="contenedor-precio-prod">
