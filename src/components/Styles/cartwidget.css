@@ -1,0 +1,15 @@
+.contenedor-previa-carrio {
+    background: #131313;
+}
+
+
+.contenedor-previa-carrio a div button{
+    background: white;
+    color: black;
+}
+
+.contenedor-previa-carrio a div button:hover {
+    background: #343434;
+    border: none;
+    color: white;
+}

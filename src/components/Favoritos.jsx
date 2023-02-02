@@ -3,16 +3,14 @@ import { useContext } from 'react'
 import { CartConext } from './Context/CartContext'
 import { Link } from 'react-router-dom'
 import {TbHeartOff} from 'react-icons/tb'
-import {AiFillExclamationCircle} from 'react-icons/ai'
+import {AiFillExclamationCircle, AiOutlineSearch} from 'react-icons/ai'
 import './Styles/favoritos.css'
 import './Styles/items.css'
-import { useState } from 'react'
 
 const Favoritos = () => {
     const {listaFavoritos} = useContext(CartConext)
     const {eliminarListaFavoritos} = useContext(CartConext)
     const {EliminarProductoFavoritos} = useContext(CartConext)
-    const [busqueda, setBusqueda] = useState()
     return (
         <>
         {
@@ -27,7 +25,16 @@ const Favoritos = () => {
             <div className="contenedor-articulos">
             <div className="buscador-favoritos">
                 <h2>Nombre del Juego</h2>
-            <input type="text" placeholder="Buscar" className="input w-full max-w-xs" />          
+            <div className="buscador">
+            <input 
+            type="text" 
+            placeholder="Buscar" 
+            className="input w-full max-w-xs" 
+            />
+            <button>
+            <AiOutlineSearch/>
+            </button>          
+            </div>
             </div>
             <div className="articulos">
                 {
