@@ -20,9 +20,9 @@ import BotonFavoritos from './BotonFavoritos'
 const ItemDetail = ({item}) => {
     const [contadorItem, setContadorItem] = useState(0)
     const {agregarACarrito} = useContext(CartConext)
-    const {agregarAFavoritos} = useContext(CartConext)
+    const {AgregarAFavoritos} = useContext(CartConext)
     const onAddFav = () => {
-        agregarAFavoritos(item)
+        AgregarAFavoritos(item)
     }
     const onAdd = (qty) =>{
         toast('Se Agrego al carrito! 🛒', {
@@ -80,6 +80,7 @@ const ItemDetail = ({item}) => {
                         ?<>
                         <ItemCount stock={item.stock} inicial={contadorItem} onAdd={onAdd}/> 
                         <BotonFavoritos onAddFav={onAddFav}/>  
+                        {/* <button onClick={AgregarAFavoritos}>Agregar a favoritos</button> */}
                         </>
                         :<>
                         <Link to={'/carrito'}>

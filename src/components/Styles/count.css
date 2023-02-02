@@ -17,13 +17,17 @@
     font-size: 30px;
 }
 
-.contenedor-contador-botones {
-}
-
 .contenedor-boton-comprar button{
     width: 100%;
     padding: 10px;
     font-weight: 800;
     background: white;
+    transition: .5s all;
     color: black;
+    border: solid 1px;
+}
+
+.contenedor-boton-comprar button:hover {
+    background: none;
+    color: white;
 }

@@ -1,9 +1,11 @@
 import { createContext, useState } from "react";
-
+import { ToastContainer, toast } from 'react-toastify';
 export const CartConext = createContext();
 
 const CartConextProvider = ({children}) => {
     const [listaCarrito, SetListaCarrito] = useState([]);
+    const [listaFavoritos, setListaFavoritos] = useState([]);
+
 
     const agregarACarrito = (item, qty) => {
         let noExiste = listaCarrito.find(prod => prod.id === item.id)
@@ -25,6 +27,51 @@ const CartConextProvider = ({children}) => {
         }
     }
 
+    const AgregarAFavoritos = (item) => {
+        let noExiste = listaFavoritos.find(prod => prod.id === item.id)
+        if(noExiste === undefined) {
+            toast.info('Se Agrego a favoritos', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                });
+            setListaFavoritos([
+                ...listaFavoritos, 
+                {
+                    id: item.id,
+                    nombre: item.nombre,
+                    imagen: item.imagen,
+                    precio: item.precio,
+                }
+            ])
+        } else {
+            toast.warn('Este articulo ya se encuentra en favoritos', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                });
+        }
+    }
+
+
+    const eliminarListaFavoritos = () => {
+        setListaFavoritos([])
+    }
+
+    const EliminarProductoFavoritos = (id) => {
+        let eliminar = listaFavoritos.filter(prod => prod.id !== id)
+        setListaFavoritos(eliminar)
+    }
 
 
     const eliminarProducto = (id) =>{
@@ -53,11 +100,14 @@ const CartConextProvider = ({children}) => {
         return (calcularSubTotal() + calcularImpuestos()) + 5;
     }
 
+    
+
     return (
         <>
-        <CartConext.Provider value={{listaCarrito ,agregarACarrito, eliminarProducto, eliminarCarrito, calcularSubTotal, calcularProductoCarrito, precioTotal, calcularImpuestos}}>
+        <CartConext.Provider value={{listaCarrito ,agregarACarrito, eliminarProducto, eliminarCarrito, calcularSubTotal, calcularProductoCarrito, precioTotal, calcularImpuestos, AgregarAFavoritos, listaFavoritos, eliminarListaFavoritos, EliminarProductoFavoritos}}>
             {children}
         </CartConext.Provider>
+        <ToastContainer/>
         </>
     )
 }

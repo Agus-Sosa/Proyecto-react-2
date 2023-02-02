@@ -86,7 +86,7 @@ const Cart = () => {
                             </div>
                             <div className='informacion' key={item.id}>
                             <p>{item.nombre}</p>
-                            
+                            <p>Cantidad: {calcularProductoCarrito() || 0}</p>
                             <div className="producto-digital">
                             </div>
                             </div>

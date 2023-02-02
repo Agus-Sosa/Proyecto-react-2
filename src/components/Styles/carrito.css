@@ -90,6 +90,10 @@
     min-width: 295px
 }
 
+.informacion p:nth-child(2) {
+    font-size: 15px;
+}
+
 .contenedor-precio-prod {
     display: flex;
     margin: 0px 15px;
