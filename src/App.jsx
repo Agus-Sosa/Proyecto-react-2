@@ -9,6 +9,7 @@ import Cart from './components/Cart'
 import Header from './components/Header'
 import ItemDetailContainer from './components/Container/ItemDetailContainer'
 import Favoritos from './components/Favoritos'
+import Portada from './components/Portada'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
       <BrowserRouter>
     <Header/>
     <Routes>
-      <Route path='/' element={<ItemListContainer/>}/>
+      <Route path='/' element={[<Portada/>, <ItemListContainer/>]}/>
       <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
       <Route path='/item/:idProducto' element={<ItemDetailContainer/>}/>
       <Route path='/carrito' element={<Cart/>}/>

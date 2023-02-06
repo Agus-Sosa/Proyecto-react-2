@@ -3,3 +3,157 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
+/* .portada-home {
+    max-height: 38pc;
+    position: relative;
+    overflow-y: hidden;
+} */
+/* 
+
+.swiper-wrapper {
+    max-height: 30pc;
+    overflow-y: hidden;
+}
+
+.swiper-wrapper img {
+    width: 100%;
+} */
+
+.portada-home {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    margin-bottom: 15px;
+    text-shadow: 0px 0px 20px black;
+}
+
+.portada-home article {
+    max-height: 35pc;
+    overflow-y: hidden;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.portada-home img {
+    width: 100%;
+}
+
+.informacion-portada {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 14pc 5pc;
+    backdrop-filter: brightness(0.5);
+}
+
+.informacion-portada h1 {
+    font-size: 40px;
+}
+
+.informacion-portada p:nth-child(1) {
+    padding: 5px;
+    display: inline;
+    font-size: 15px;
+    background-color: #282936;
+    color: white;
+    /* border-radius: 5px; */
+}
+
+.informacion-portada p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.boton-portada button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-size: inherit;
+        font-family: inherit;
+    }
+    
+    .boton-portada button.learn-more {
+        width: 12rem;
+        height: auto;
+    }
+    
+    .boton-portada  button.learn-more .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: #282936;
+        border-radius: 1.625rem;
+    }
+    
+    .boton-portada button.learn-more .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #fff;
+    }
+    
+    .boton-portada  button.learn-more .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.625rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+    }
+    
+    .boton-portada button.learn-more .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0625rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+    }
+    
+    .boton-portada  button.learn-more .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.75rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #282936;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .boton-portada button:hover .circle {
+        width: 100%;
+    }
+    
+    .boton-portada button:hover .circle .icon.arrow {
+        background: #fff;
+        transform: translate(1rem, 0);
+    }
+    
+    .boton-portada button:hover .button-text {
+        color: #fff;
+    }

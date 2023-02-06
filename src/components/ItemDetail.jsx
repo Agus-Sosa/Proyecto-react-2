@@ -80,14 +80,20 @@ const ItemDetail = ({item}) => {
                         ?<>
                         <ItemCount stock={item.stock} inicial={contadorItem} onAdd={onAdd}/> 
                         <BotonFavoritos onAddFav={onAddFav}/>  
-                        {/* <button onClick={AgregarAFavoritos}>Agregar a favoritos</button> */}
                         </>
                         :<>
-                        <Link to={'/carrito'}>
-                            <div className='ir-a-carrito'>
-                                <button>Ir a carrito <HiOutlineArrowNarrowRight/></button>
-                            </div>
+                        <div className="contenedor-post-compra">
+                            <Link to={'/'}>
+                                <button>
+                                    Seguir comprando
+                                </button>
                             </Link>
+                            <Link to={'/carrito'}>
+                                <button>
+                                    Ir a carrito
+                                </button>
+                            </Link>
+                        </div>
                         </>
                     }
                 </div>
