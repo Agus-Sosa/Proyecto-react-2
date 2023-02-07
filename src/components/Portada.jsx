@@ -13,10 +13,18 @@ const Portada = ({item}) => {
         <>
         <section className='portada-home'>
         <article>
-            <img src="https://images.alphacoders.com/117/thumb-1920-1173124.jpg" alt="" />
+            <img src="https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-hero-banner-desktop-01-en-07sep21?$2400px$" alt="" />
         </article>
         <div className="informacion-portada">
+            <Link to={'/categoria/PlayStation'}>
+            <div className='categoria'>
             <p>Playstation</p>
+            </div>
+            </Link>
+            <div className="consolas-disponibles-portada">
+                <p>Ps4</p> 
+                <p>Ps5</p>
+            </div>
             <h1>God Of War Ragnarok</h1>
             <p>Nuevo Lanzamiento de Santa Monica Studio</p>
             <div className='boton-portada'>
