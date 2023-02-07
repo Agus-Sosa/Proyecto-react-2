@@ -78,6 +78,7 @@
 
 }
 
+
 .categoria-genero span {
     margin: 0px 10px;
 }
@@ -116,7 +117,8 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 
 .contenedor-precio-producto svg {
     margin: 0px 10px;
-    font-size: 15px;
+    font-size: 17px;
+    cursor: help;
 }
 
 
@@ -194,12 +196,12 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
     flex-direction: column;
     margin: 40px 0px;
     margin-bottom: 0pc;
-
+    
 }
 
 
 .contenedor-post-compra button:hover {
     color: white;
     background: none;
-
+    
 }

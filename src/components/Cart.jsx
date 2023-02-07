@@ -112,10 +112,6 @@ const Cart = () => {
                     <span>Impuestos</span>
                     <span>US${calcularImpuestos() || 0}</span>
                 </div>
-                <div className="envios">
-                    <span>Envio</span>
-                    <span>US$5</span>
-                </div>
                 </div>
                 <div className="precio-total">
                     <span>Total</span>

@@ -15,6 +15,8 @@ import Capturas from './Capturas'
 import { ToastContainer, toast } from 'react-toastify'
 import DescripcionItem from './DescripcionItem'
 import BotonFavoritos from './BotonFavoritos'
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 
 
 const ItemDetail = ({item}) => {
@@ -72,7 +74,11 @@ const ItemDetail = ({item}) => {
                     <p>Valoracion</p>
                     </div>
                     <div className='contenedor-precio-producto'>
-                <h3>US${item.precio}</h3> <HiOutlineExclamationCircle/> <span>No es el precio final</span>
+                <h3>US${item.precio}</h3> <span id='info-precio' data-tooltip-html='No es el precio final.<br/> Se aplicarán gastos de gestión al finalizar la compra' data-tooltip-variant='info'><HiOutlineExclamationCircle/></span> <span>No es el precio final</span>
+                <ReactTooltip anchorId='info-precio'
+                className='tooltip'
+                
+                />
                     </div>
                     {
                         contadorItem === 0

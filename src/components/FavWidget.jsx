@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom'
 const FavWidget = () => {
     return (
         <Link to={'/favoritos'}>
+            <label className='btn btn-ghost btn-circle'>
         <div className='favoritos-widget'>
         {<AiOutlineHeart/>}
         </div>
+            </label>
         </Link>
     )
 }

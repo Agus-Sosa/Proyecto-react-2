@@ -97,7 +97,7 @@ const CartConextProvider = ({children}) => {
     }
 
     const precioTotal = () => {
-        return (calcularSubTotal() + calcularImpuestos()) + 5;
+        return (calcularSubTotal() + calcularImpuestos());
     }
 
     
