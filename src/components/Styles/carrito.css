@@ -198,6 +198,22 @@
     border: solid 1px white;
 }
 
+.info-icono-exclamacion {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+
+
+.info-icono-exclamacion span {
+    margin: 0px 5px;
+    font-size: 14px;
+}
+
+
 .contenedor-borrar-carrito button {
 
     width: 150px;

@@ -6,6 +6,10 @@ import {collection, doc, increment, serverTimestamp, setDoc, updateDoc} from 'fi
 import {RiDeleteBin6Line} from 'react-icons/ri'
 import { Link } from 'react-router-dom'
 import { db } from '../utils/FireBaseConfig'
+import {HiOutlineExclamationCircle, HiOutlineQuestionMarkCircle} from 'react-icons/hi'
+import { Tooltip } from 'react-tooltip'
+import { Tooltip as ReactTooltip } from 'react-tooltip'
+import 'react-tooltip/dist/react-tooltip.css'
 import { ToastContainer, toast } from 'react-toastify'
 
 const Cart = () => {
@@ -87,6 +91,13 @@ const Cart = () => {
                             <div className='informacion' key={item.id}>
                             <p>{item.nombre}</p>
                             <p>Cantidad: {calcularProductoCarrito() || 0}</p>
+                            <div className="info-icono-exclamacion">
+                            <span id='info-juego-digital' data-tooltip-html='Estás comprando una versión digital del producto. <br/> Recibirá una clave de producto que se puede activar <br/> en su plataforma adecuada.'><HiOutlineQuestionMarkCircle/></span>
+                            <p>Juegos digitales</p>
+                            <ReactTooltip
+                            anchorId='info-juego-digital'
+                            />
+                            </div>
                             <div className="producto-digital">
                             </div>
                             </div>

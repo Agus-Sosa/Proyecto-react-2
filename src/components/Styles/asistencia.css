@@ -1,0 +1,33 @@
+.contenedor-asistencia {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+
+.detalles {
+    display: flex;
+    box-shadow: rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(0 0 0 / 15%) 0px 2px 6px 2px;    
+    padding: 30px;  
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.contenedor-icono {
+    font-size: 40px;
+    color: white;
+    margin: 10px 15px;
+}
+
+.contenedor-info {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-info svg {
+    margin: 0px 5px;
+    cursor: help;
+}
+

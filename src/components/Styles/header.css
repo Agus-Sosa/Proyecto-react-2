@@ -8,4 +8,17 @@ div {
 
 .contenedor-lista {
     background-color: #131313;
+
 }
+
+.contenedor-lista li {
+    padding: 8px;
+    border-radius: 5px;
+    margin: 3px 0px;
+    transition: .5s all ;
+}
+
+.contenedor-lista li:hover {
+    background: #343434;
+}
+

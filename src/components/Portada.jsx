@@ -6,6 +6,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Asistencia from './Asistencia';
 
 const Portada = ({item}) => {
     return (
@@ -40,6 +41,7 @@ const Portada = ({item}) => {
         </div>
             </section>
     </>
+        <Asistencia/>   
         <h2>Recomendados para ti</h2>
         </>
 
