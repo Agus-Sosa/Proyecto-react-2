@@ -31,12 +31,14 @@ const DescripcionItem = ({item}) => {
         </div>
         <div className='contenedor-imagen-descripcion'>
             <h3>Trailer</h3>
+            <div className='contenedor-trailer'>
             <ReactPlayer 
             url={item.trailer}
             controls
             muted
             loop
             />
+            </div>
         </div>
         </section>
         </div>

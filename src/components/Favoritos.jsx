@@ -23,7 +23,7 @@ const Favoritos = () => {
                     <button onClick={eliminarListaFavoritos}> Borrar todo</button>
                 </div>
             <div className="contenedor-articulos">
-            <div className="buscador-favoritos">
+            {/* <div className="buscador-favoritos">
                 <h2>Nombre del Juego</h2>
             <div className="buscador">
             <input 
@@ -35,7 +35,7 @@ const Favoritos = () => {
             <AiOutlineSearch/>
             </button>          
             </div>
-            </div>
+            </div> */}
             <div className="articulos">
                 {
                 listaFavoritos.length > 0

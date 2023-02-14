@@ -8,7 +8,7 @@
     display: flex;
     box-shadow: rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(0 0 0 / 15%) 0px 2px 6px 2px;    
     padding: 30px;  
-    border-radius: 30px;
+    border-radius: 10px;
     flex-direction: column;
     align-items: center;
 
@@ -24,6 +24,7 @@
 .contenedor-info {
     display: flex;
     align-items: center;
+    font-weight: 600;
 }
 
 .contenedor-info svg {
@@ -31,3 +32,13 @@
     cursor: help;
 }
 
+@media screen and (max-width: 600px) {
+    .contenedor-asistencia {
+        flex-direction: column;
+        margin: 15px 20px;
+    }
+    .detalles {
+        margin: 20px 0px;
+        border-radius: 5px;
+    }
+}

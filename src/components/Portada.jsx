@@ -16,6 +16,9 @@ const Portada = ({item}) => {
         <article>
             <img src="https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-hero-banner-desktop-01-en-07sep21?$2400px$" alt="" />
         </article>
+        <div className="contenedor-imagen-movil">
+            <img src="https://w0.peakpx.com/wallpaper/147/517/HD-wallpaper-the-art-of-god-of-war-ragnarok-to-release-in-november-2022-god-of-war-ragnorok.jpg" alt="" />
+        </div>
         <div className="informacion-portada">
             <Link to={'/categoria/PlayStation'}>
             <div className='categoria'>

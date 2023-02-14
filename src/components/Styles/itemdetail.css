@@ -56,7 +56,7 @@
 
 .contenedor-informacion {
     margin: 0px 30px;
-    min-width: 40pc;
+    width: 40pc;
 
 }
 
@@ -98,10 +98,10 @@
 }
 
 .contenedor-precio {
-padding: 30px;
-background-color: #1e1e1e;
-min-width: 430px;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 30px;
+    background-color: #1e1e1e;
+    width: 430px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .contenedor-precio h3 {
@@ -203,5 +203,15 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 .contenedor-post-compra button:hover {
     color: white;
     background: none;
+    
+}
+
+
+.contenedor-trailer {
+    display: flex;
+}
+
+
+@media screen and (max-width: 1060px) {
     
 }

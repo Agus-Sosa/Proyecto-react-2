@@ -164,3 +164,40 @@ h2 {
         /* border-radius: 5px; */
         margin-right: 10px;
     }
+
+
+    .contenedor-imagen-movil {
+        display: none;
+    }
+
+    @media screen and (max-width: 1300px) {
+            .informacion-portada {
+                padding: 5pc 5pc 14pc   ;
+            }
+    }
+
+    @media screen and (max-width: 700px) {
+
+        .informacion-portada {
+            padding: 2pc 5pc;
+            top: 40%;
+            backdrop-filter: blur(1px);
+        }
+
+        .informacion-portada h1 {
+            font-size: 25px;
+        }
+
+        .contenedor-imagen-movil {
+            display: block;
+            max-height: 35pc;
+            overflow-y: hidden;
+        }
+
+        .contenedor-imagen-movil img {
+            filter: brightness(0.5);
+        }
+        .portada-home article img {
+            display: none;
+        }
+    }
