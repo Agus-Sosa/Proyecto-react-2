@@ -293,7 +293,7 @@
         min-width: 130px;
     }
     .contenedor-precio-prod {
-        width: 300px;
+        /* width: 300px; */
         margin: 10px;
     }
     .contenedor-pago-carrito {
@@ -302,5 +302,57 @@
 
     .informacion {
         min-width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor-prod-carrito ul {
+        width: inherit;
+        min-width: auto;
+    }
+
+    .imagen img {
+        min-width: 100px;
+    }
+
+    .contenedor-carrito-vacio {
+        margin: 70px 0px;
+    }
+    .informacion {
+        display: flex;
+        min-width: auto;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .informacion p:nth-child(2) {
+        font-size: 10px;
+    }
+
+
+    .contenedor-precio-prod {
+        min-width: auto;
+        
+    }
+
+    .info-icono-exclamacion {
+        margin: auto;
+        font-size: 10px;
+    display: none;
+    }
+
+
+    .contenedor-prod-carrito {
+        padding: 10px;
+    }
+
+    .contenedor-precio-prod p {
+        font-size: 14px;
+    }
+
+    .contenedor-borrar-carrito button{
+        height: 44px;
+        width: 151px;
+        font-size: 13px;
     }
 }

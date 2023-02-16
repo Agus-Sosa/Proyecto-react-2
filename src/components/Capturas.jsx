@@ -33,7 +33,32 @@ const Capturas = ({item}) => {
             <SwiperSlide><img src={item.capturas[4]} alt="" /></SwiperSlide>
         </Swiper>
             </div>
+            {/* Capturas movil */}
         </section>
+
+        <div className="contenedor-capturas-movil">
+            <h3>Galeria</h3>
+            <div className='capturas-movil'>
+                <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            navigation={true}
+            pagination={{
+                clickable: true,
+            }}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+            >
+            <SwiperSlide><img src={item.capturas[0]} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={item.capturas[1]} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={item.capturas[2]} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={item.capturas[3]} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={item.capturas[4]} alt="" /></SwiperSlide>
+        </Swiper>
+            </div>
+            </div>
         </>
     )
 }

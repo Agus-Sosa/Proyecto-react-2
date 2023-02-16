@@ -170,3 +170,39 @@
 .buscador input:focus {
     outline: none;
 }
+
+
+@media screen and (max-width: 600px) {
+
+
+    .card-favoritos {
+        display: flex;
+        width: inherit;
+        margin: 10px 0px;
+    }
+
+    .contenedor-imagen {
+        margin: 10px;
+    }
+
+    .contenedor-imagen article {
+        width: 100px;
+    }
+
+    .contenedor-fav-vacio {
+        width: max-content;
+    }
+
+    .contenedor-info-card span {
+        font-size: 16px;
+        margin: 0px 10px;
+    }
+
+    .contenedor-info-card {
+        padding: 7px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+}

@@ -4,10 +4,10 @@ import './Styles/descripcion.css'
 const DescripcionItem = ({item}) => {
     return (
         <>
-        <div className='descripcion'>
-            <div className='portada-descripcion'>
+        <div className='descripcion-1'>
+            {/* <div className='portada-descripcion'>
         <img src={item.portada} alt="" />
-            </div>
+            </div> */}
         <section className='contenedor-descripcion'> 
         <div className='contenedor-descripcion-prod'>
         <h3>Descripcion</h3>
@@ -39,7 +39,18 @@ const DescripcionItem = ({item}) => {
             loop
             />
             </div>
+            <div className='contenedor-trailer-movil'>
+            <ReactPlayer 
+            url={item.trailer}
+            controls
+            muted
+            width={300}
+            height={202}
+            loop
+            />
+            </div>
         </div>
+        
         </section>
         </div>
         </>

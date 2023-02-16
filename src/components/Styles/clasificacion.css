@@ -13,3 +13,13 @@
 .contenedor-info-clasificacion p {
     font-size: 15px;
 }
+
+@media screen and (max-width: 900px) {
+    .contenedor-info-clasificacion {
+        max-width: fit-content;
+    }
+
+    .contenedor-info-clasificacion p {
+        font-size: 12px;
+    }
+}

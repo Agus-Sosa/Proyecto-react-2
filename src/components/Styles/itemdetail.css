@@ -207,11 +207,122 @@
 }
 
 
+.capturas-movil {
+    display: none;
+}
+
+
 .contenedor-trailer {
     display: flex;
 }
 
 
+.contenedor-capturas-movil {
+    display: none;
+}
+
+
 @media screen and (max-width: 1060px) {
     
+}
+
+@media screen and (max-width: 650px) {
+
+
+    .contenedor-imagen-portada {
+        height: 200px;
+    }
+
+    .contenedor-informacion-producto {
+        flex-direction: column;
+    }
+
+    .contenedor-nav-detalle {
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .contenedor-imagen-producto {
+        width: 300px;
+        display: flex;
+        margin: auto;
+    }
+
+
+    .contenedor-informacion {
+        margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    flex-direction: column;
+    }
+
+
+    .contenedor-informacion h2 {
+        font-size: 15px;
+    }
+    
+    .categoria-genero {
+        font-size: 12px;
+    }
+
+    .contenedor-jugabilidad {
+        font-size: 12px;
+    }
+
+
+    .contenedor-precio {
+        width: auto;
+    }
+
+    .contenedor-precio h3 {
+        font-size: 18px;
+    }
+
+    .contenedor-valoracion p{
+        font-size: 16px;
+    }
+
+    .titulo-detalle {
+        font-size: 15px;
+    }
+
+    .titulo-detalle h2 {
+        font-size: 16px;
+    }
+
+    .contenedor-capturas {
+        display: none;
+    }
+
+
+    .capturas {
+        display: none;
+    }
+
+    .capturas-movil {
+        display: flex;
+    }
+
+    .capturas-movil img {
+        border-radius: 5px;
+    }
+
+
+
+    .contenedor-capturas-movil {
+        display: block;
+        margin: 10px;
+    }
+
+    .contenedor-capturas-movil h3 {
+        margin: 10px 0px;
+    }
+
+    
+
+    .contenedor-capturas h3 {
+        font-size: 16px;
+    }
+
 }

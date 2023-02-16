@@ -1,7 +1,7 @@
 .contenedor-items {
     display: flex;
-    justify-content: center;
-    margin: 10px;    
+    justify-content: space-evenly;
+    margin: 10px 50px;    
 }
 
 
@@ -87,7 +87,7 @@ border-radius: 10px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .contenedor-items {
         display: flex;
         flex-direction: column;

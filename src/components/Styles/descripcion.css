@@ -1,10 +1,9 @@
-.descripcion {
-    margin: 20px;
-}
 
-.descripcion {
-    position: relative;
-    margin: 0px;
+.descripcion-1 {
+    margin: 20px;
+    background-color: #1a1a1a;
+    box-shadow: rgba(0, 0, 0, 0.724) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 20px;
 }
 
 .portada-descripcion img {
@@ -13,11 +12,6 @@
     width: 100%;
 }
 
-.portada-descripcion {
-    filter: brightness(0.3);
-    overflow: hidden;
-    max-height: 600px;
-}
 
 .descripcion h3 {
     font-size: 25px;
@@ -42,7 +36,7 @@
 
 .contenedor-descripcion {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     align-items: center;
     margin: 15px 51px;
     justify-content: space-between;
@@ -54,8 +48,7 @@
 }
 
 .contenedor-imagen-descripcion iframe {
-    border-radius: 20px;
-    /* box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px; */
+    border-radius: 10px;
 }
 
 .contenedor-valoracion{
@@ -85,5 +78,81 @@
 }
 
 .contenedor-desarrollador p {
+
     font-weight: 900;
+}
+
+
+.contenedor-trailer-movil {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedor-trailer iframe{
+        width: 500px;
+    }
+
+    .contenedor-descripcion {
+        margin: auto 16px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .contenedor-descripcion {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .descripcion-1 {
+        padding: 20px 10px;
+        margin: 10px;
+    }
+
+    .contenedor-desarrollador {
+        margin: 20px 0px;
+    display: flex;
+    font-size: 12px;
+    flex-direction: row-reverse;
+    }
+
+
+    .contenedor-imagen-descripcion {
+        margin: auto;
+        width: auto;
+    }
+
+    .contenedor-trailer {
+        width: auto;
+        display: flex;
+    }
+
+
+    .contenedor-trailer iframe {
+        max-width: max-content;
+
+    }
+
+    .contenedor-trailer div {
+        width: auto;
+        height: auto;
+
+        
+    }
+
+    .contenedor-trailer-movil {
+        display: block;
+    }
+
+    .contenedor-trailer-movil iframe {
+        width: auto;
+    }
+
+    .contenedor-trailer {
+        display: none;
+    }
 }

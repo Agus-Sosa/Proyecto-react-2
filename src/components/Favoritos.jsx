@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import {TbHeartOff} from 'react-icons/tb'
 import {AiFillExclamationCircle, AiOutlineSearch} from 'react-icons/ai'
 import './Styles/favoritos.css'
-import './Styles/items.css'
+// import './Styles/items.css'
 
 const Favoritos = () => {
     const {listaFavoritos} = useContext(CartConext)
