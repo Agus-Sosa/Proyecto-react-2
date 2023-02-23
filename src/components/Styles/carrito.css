@@ -124,7 +124,7 @@
 .contenedor-pago-carrito {
     background-color: #232222;
     min-width: 365px;
-    max-height: 23pc;
+    max-height: 24pc;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     padding: 20px;
 
@@ -279,6 +279,29 @@
 .contenedor-borrar-carrito button:active .icon svg {
     transform: scale(0.8);
 }
+
+
+.metodos-de-pago {
+    display: flex;
+    align-items: center;
+    margin: 13px 0px 0px;
+    padding: 2px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    background: #313030;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.metodos-de-pago img {
+    width: 51px;
+}
+
+
+.contenedor-codigo-descuento{
+    background-color: #232222;
+}
+
+
 
 @media screen and (max-width: 1050px){
     .contenedor-carrito {

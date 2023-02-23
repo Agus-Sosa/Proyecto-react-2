@@ -1,5 +1,5 @@
 footer {
-    background: black;
+    background: #252424;
 }
 
 .contenedor-redes-logo a svg {
@@ -11,3 +11,34 @@ footer {
     color: gray;
     
 }
+
+
+.contenedor-redes {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    margin: 0pc 0pc 15px;
+}
+
+
+.contenedor-redes a {
+    font-size: 25px;
+    transition: .5s all;
+    margin-right: 15px;
+}
+
+
+.contenedor-redes a:hover {
+        color: rgb(125, 124, 124);
+}
+
+/* .boton-suscribirse {
+    color: black;
+    background-color: white;
+}
+
+
+.boton-suscribirse:hover {
+    background: #252424;
+    border: none;
+} */

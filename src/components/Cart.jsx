@@ -6,11 +6,11 @@ import {collection, doc, increment, serverTimestamp, setDoc, updateDoc} from 'fi
 import {RiDeleteBin6Line} from 'react-icons/ri'
 import { Link } from 'react-router-dom'
 import { db } from '../utils/FireBaseConfig'
-import {HiOutlineExclamationCircle, HiOutlineQuestionMarkCircle} from 'react-icons/hi'
-import { Tooltip } from 'react-tooltip'
+import {HiOutlineQuestionMarkCircle} from 'react-icons/hi'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css'
 import { ToastContainer, toast } from 'react-toastify'
+
 
 const Cart = () => {
     const {listaCarrito} = useContext(CartConext)
@@ -131,6 +131,11 @@ const Cart = () => {
                 <button className="boton-comprar" onClick={agregarOrden}>
                     Comprar 
                 </button>
+                <div className="metodos-de-pago">
+                    <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/brand-history/brandhistory_mc_vrt_120_2x.png" alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="" />
+                    <img src="https://ps.w.org/woocommerce-mercadopago/assets/icon-256x256.png?rev=2653727" alt="" />
+                </div>
             </div>
         </section>
         :  <div className="contenedor-carrito-vacio">

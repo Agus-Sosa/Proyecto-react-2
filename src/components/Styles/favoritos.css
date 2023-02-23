@@ -193,6 +193,10 @@
         width: max-content;
     }
 
+    .contenedor-fav-vacio p {
+        width: inherit;
+    }
+
     .contenedor-info-card span {
         font-size: 16px;
         margin: 0px 10px;

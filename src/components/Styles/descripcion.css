@@ -18,6 +18,17 @@
 
 }
 
+
+.contenedor-descripcion-prod h3 {
+    font-size: 22px;
+}
+
+
+
+.contenedor-imagen-descripcion h3 {
+    font-size: 22px;
+}
+
 .contenedor-descripcion {
     display: flex;
     margin: 15px 0px;
