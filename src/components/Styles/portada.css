@@ -10,6 +10,8 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: hidden;
+    margin: 20px;
+    border-radius: 5px;
     margin-bottom: 15px;
     box-shadow: rgb(0, 0, 0) 0px 3px 6px, rgb(0, 0, 0) 0px 3px 6px;
     text-shadow: 0px 0px 20px black;

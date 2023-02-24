@@ -42,3 +42,36 @@ footer {
     background: #252424;
     border: none;
 } */
+
+
+.contenedor-autor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-redes-autor {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.contenedor-redes-autor a {
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 25px;
+    border: solid 1px gray;    
+    transition: .5s all ;
+}
+
+.contenedor-autor p {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.contenedor-redes-autor a:hover {
+    color: rgb(125, 124, 124);
+
+}

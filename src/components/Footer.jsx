@@ -22,9 +22,9 @@ const Footer = () => {
             <div>
                 <span className="footer-title">Siguenos</span> 
                 <div className="contenedor-redes">
-                    <a href=""><BsInstagram/></a>
-                    <a href=""><BsTwitter/></a>
-                    <a href=""><BsFacebook/></a>
+                    <a href="*"><BsInstagram/></a>
+                    <a href="*"><BsTwitter/></a>
+                    <a href="*"><BsFacebook/></a>
                 </div>
                 <div className="form-control w-80">
                     <span className='footer-title text-lg'>Suscibete</span>
@@ -38,6 +38,16 @@ const Footer = () => {
                 </div>
             </div>
             </footer>
+            <hr />
+            <div className="contenedor-autor footer p-12 text-base-content">
+                <h2>Autor</h2>
+                <p>Agustin Sosa</p>
+                <span className='footer-title'>Redes Sociales</span>
+                <div className="contenedor-redes-autor">
+                    <a href="https://www.instagram.com/agus_sosa544/"><BsInstagram/></a>
+                    <a href="https://www.linkedin.com/in/agust%C3%ADn-sosa-a6b29b248/"><BsLinkedin/></a>
+                </div>
+            </div>
         </>
     )
 }

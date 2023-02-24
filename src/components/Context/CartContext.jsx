@@ -71,6 +71,16 @@ const CartConextProvider = ({children}) => {
     const EliminarProductoFavoritos = (id) => {
         let eliminar = listaFavoritos.filter(prod => prod.id !== id)
         setListaFavoritos(eliminar)
+        toast.success('Se elimino de favoritos', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
     }
 
 
